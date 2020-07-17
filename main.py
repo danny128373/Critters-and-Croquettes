@@ -52,10 +52,10 @@ village_hidden_in_the_mist.set_animals(
 # Printing animals in each area
 for animal in varmint_village.animals:
     print(
-        f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+        f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}.')
 for animal in okavango.animals:
     print(
-        f'You can find {animal.name} the {animal.species} in {okavango.attraction_name}')
+        f'You can find {animal.name} the {animal.species} in {okavango.attraction_name}.')
 for animal in village_hidden_in_the_mist.animals:
     print(
-        f'You can find {animal.name} the {animal.species} in {village_hidden_in_the_mist.attraction_name}')
+        f'You can find {animal.name} the {animal.species} in {village_hidden_in_the_mist.attraction_name}.')
