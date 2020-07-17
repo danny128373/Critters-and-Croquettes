@@ -20,7 +20,7 @@ from snakepit import Snakepit
 
 
 # Creating an instance for every animal
-alligator = Alligator("Allie", "alligator", "humans")
+alligator = Alligator("Allie", "alligator", "humans", 555444)
 alligator.feed()
 cow = Cow("Milkshake", "cow", "grass")
 cow.feed()
@@ -59,3 +59,8 @@ for animal in okavango.animals:
 for animal in village_hidden_in_the_mist.animals:
     print(
         f'You can find {animal.name} the {animal.species} in {village_hidden_in_the_mist.attraction_name}.')
+
+# Making a private attribute in Alligator instance
+print(alligator.chip_num)
+alligator.chip_num = 550
+print(alligator.chip_num)
