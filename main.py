@@ -20,23 +20,23 @@ from snakepit import Snakepit
 
 
 # Creating an instance for every animal
-alligator = Alligator("Allie", "alligator", "humans", 555444)
+alligator = Alligator("Allie", "alligator", "humans", 1000)
 alligator.feed()
-cow = Cow("Milkshake", "cow", "grass")
+cow = Cow("Milkshake", "cow", "grass", 1001)
 cow.feed()
-deer = Deer("Bambi", "deer", "grapes")
-fox = Fox("Sly Cooper", "fox", "bunnies")
-giraffe = Giraffe("Jeffrey", "giraffe", "leaves")
-horse = Horse("Al Capony", "horse", "hay")
-snake = Snake("Danger Noodle", "snake", "mice")
-worm = Worm("Slinky", "worm", "plants")
-slug = Slug("Slug-E-Fresh", "slug", "plants")
-salamander = Salamander("Natsu", "salamander", "dragonflies")
-hellbender = Hellbender("Mud Devil", "hellbender", "crayfish")
-turtle = Turtle("The Flash", "turtle", "snails")
-fish = Fish("Phish Styx", "fish", "algae")
-shark = Shark("Chum", "shark", "fish")
-whale = Whale("Panda Whale", "whale", "seals")
+deer = Deer("Bambi", "deer", "grapes", 1002)
+fox = Fox("Sly Cooper", "fox", "bunnies", 1003)
+giraffe = Giraffe("Jeffrey", "giraffe", "leaves", 1004)
+horse = Horse("Al Capony", "horse", "hay", 1005)
+snake = Snake("Danger Noodle", "snake", "mice", 1006)
+worm = Worm("Slinky", "worm", "plants", 1007)
+slug = Slug("Slug-E-Fresh", "slug", "plants", 1008)
+salamander = Salamander("Natsu", "salamander", "dragonflies", 1009)
+hellbender = Hellbender("Mud Devil", "hellbender", "crayfish", 1010)
+turtle = Turtle("The Flash", "turtle", "snails", 1011)
+fish = Fish("Phish Styx", "fish", "algae", 1012)
+shark = Shark("Chum", "shark", "fish", 1013)
+whale = Whale("Panda Whale", "whale", "seals", 1014)
 
 # Creating areas for the animals
 varmint_village = PettingZoo("Varmint Village")
@@ -62,5 +62,5 @@ for animal in village_hidden_in_the_mist.animals:
 
 # Making a private attribute in Alligator instance
 print(alligator.chip_num)
-alligator.chip_num = 550
+alligator.chip_num = 500
 print(alligator.chip_num)

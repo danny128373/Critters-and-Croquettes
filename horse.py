@@ -3,10 +3,8 @@ from datetime import date
 
 
 class Horse(Animal):
-    def __init__(self, name, species, food):
-        super().__init__(name, species, food)
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.__chip_num = chip_num
         self.walking = True
         self.shift = "morning"
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
