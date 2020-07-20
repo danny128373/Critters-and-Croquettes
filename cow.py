@@ -8,3 +8,6 @@ class Cow(Animal):
         self.__chip_num = chip_num
         self.walking = True
         self.shift = "morning"
+
+    def feed(self):
+        return f'While singing "Last Resort", {self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'

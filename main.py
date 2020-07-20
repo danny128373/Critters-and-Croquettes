@@ -64,3 +64,8 @@ for animal in village_hidden_in_the_mist.animals:
 print(alligator.chip_num)
 alligator.chip_num = 500
 print(alligator.chip_num)
+
+# Overriding feed methods
+print(alligator.feed())
+print(cow.feed())
+print(fox.feed())
