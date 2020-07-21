@@ -10,4 +10,4 @@ class Cow(Animal):
         self.shift = "morning"
 
     def feed(self):
-        return f'While singing "Last Resort", {self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
+        return f'While singing "Last Resort", {self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}.'

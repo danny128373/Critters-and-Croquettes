@@ -8,4 +8,4 @@ class Alligator(Animal):
         self.swimming = True
 
     def feed(self):
-        return f'While singing "Bodies", {self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
+        return f'While singing "Bodies", {self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}.'
