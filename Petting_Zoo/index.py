@@ -17,6 +17,7 @@ from animals import Whale
 from attractions import PettingZoo
 from attractions import Wetlands
 from attractions import Snakepit
+from movements import Walking, Slithering, Swimming
 
 
 # Creating an instance for every animal
@@ -39,13 +40,16 @@ shark = Shark("Chum", "shark", "fish", 1013)
 whale = Whale("Panda Whale", "whale", "seals", 1014)
 
 # Creating areas for the animals
-varmint_village = PettingZoo("Varmint Village")
+varmint_village = PettingZoo(
+    "Varmint Village", "Animals you can pet and walk with!")
 varmint_village.set_animals([cow, deer, fox, giraffe, horse])
 
-okavango = Wetlands("Okavango")
+okavango = Wetlands(
+    "Okavango", f"Careful with {alligator.name} and {shark.name}")
 okavango.set_animals([alligator, turtle, fish, shark, whale])
 
-village_hidden_in_the_mist = Snakepit("Village Hidden in the Mist")
+village_hidden_in_the_mist = Snakepit(
+    "Village Hidden in the Mist", "Danger! Some animals in here hug too hard")
 village_hidden_in_the_mist.set_animals(
     [snake, worm, slug, salamander, hellbender])
 
@@ -69,3 +73,8 @@ print(alligator.chip_num)
 print(alligator.feed())
 print(cow.feed())
 print(fox.feed())
+
+# Multiple inheritance practice
+alligator.swim()
+alligator.run()
+cow.run()

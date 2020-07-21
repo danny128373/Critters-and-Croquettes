@@ -1,8 +1,10 @@
-class PettingZoo:
+from .attractions import Attraction
 
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "cute and fuzzy critters to cuddle"
+
+class PettingZoo(Attraction):
+
+    def __init__(self, name, description):
+        super().__init__(name, description)
         self.animals = list()
 
     def set_animals(self, animals):
