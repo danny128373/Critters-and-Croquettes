@@ -1,8 +1,8 @@
 class Wetlands:
 
-    def __init__(self, name):
+    def __init__(self, name, description):
         self.attraction_name = name
-        self.description = "Danger! Alligators appear friendly, but they'll befriend you and stab you in the back"
+        self.description = description
         self.animals = list()
 
     def set_animals(self, animals):
