@@ -56,13 +56,13 @@ village_hidden_in_the_mist.set_animals(
 # Printing animals in each area
 for animal in varmint_village.animals:
     print(
-        f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}.')
+        f'You can find {animal.name} the {animal.species} in {varmint_village.name}.')
 for animal in okavango.animals:
     print(
-        f'You can find {animal.name} the {animal.species} in {okavango.attraction_name}.')
+        f'You can find {animal.name} the {animal.species} in {okavango.name}.')
 for animal in village_hidden_in_the_mist.animals:
     print(
-        f'You can find {animal.name} the {animal.species} in {village_hidden_in_the_mist.attraction_name}.')
+        f'You can find {animal.name} the {animal.species} in {village_hidden_in_the_mist.name}.')
 
 # Making a private attribute in Alligator instance
 print(alligator.chip_num)
@@ -78,3 +78,7 @@ print(fox.feed())
 alligator.swim()
 alligator.run()
 cow.run()
+
+# Practicing duck typing
+varmint_village.add_animal_pythonic(snake)
+varmint_village.add_animal_pythonic(cow)
